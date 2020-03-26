@@ -245,7 +245,7 @@ if [[ -n "${HOMEBREW_ON_LINUX-}" ]]; then
   HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
 fi
 
-if [[ "$UID" == "0" ]]; then
+if [[ "$UID" == "987" ]]; then
   abort "Don't run this as root!"
 elif [[ -d "$HOMEBREW_PREFIX" && ! -x "$HOMEBREW_PREFIX" ]]; then
   abort "$(cat <<EOABORT
